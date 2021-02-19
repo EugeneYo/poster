@@ -39,4 +39,18 @@ page {
 			height: 42cm;
 		}
 	}
+
+	// Setting background color with linear-gradient for pages
+	&.page-1 {
+		background-image: linear-gradient(to right bottom, rgba($stellar-light, 0.7), rgba($stellar-dark, 0.7));
+	}
+
+	&.page-2 {
+	}
+
+	&.page-3 {
+	}
+
+	&.page-4 {
+	}
 }
