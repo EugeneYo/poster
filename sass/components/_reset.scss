@@ -1,0 +1,42 @@
+// Setting default properties
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 1cm;
+}
+
+body {
+	background: rgb(204, 204, 204);
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	color: #000;
+	position: relative;
+}
+
+page {
+	background: rgb(248, 188, 110);
+	display: block;
+	/* padding: 0; */
+	margin: 0 auto;
+	margin-top: 0.5cm;
+	margin-bottom: 0.5cm;
+	box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+	position: relative;
+
+	&[size="A2"] {
+		width: 42cm;
+		height: 59.4cm;
+
+		&[layout="landscape"] {
+			width: 59.4cm;
+			height: 42cm;
+		}
+	}
+}

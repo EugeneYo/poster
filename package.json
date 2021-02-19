@@ -1,0 +1,23 @@
+{
+  "name": "poster",
+  "version": "1.0.0",
+  "description": "How to handle a negotiation effectively poster for Workplace Communication Skills",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugeneYo/poster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EugeneYo/poster/issues"
+  },
+  "homepage": "https://github.com/EugeneYo/poster#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}
