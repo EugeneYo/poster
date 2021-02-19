@@ -11,22 +11,41 @@
 		z-index: 10;
 	}
 
-	&_photo--p1 {
-		left: 0;
-		top: 0;
+	&__photo--p1 {
+		left: 1rem;
+		top: -7rem;
 	}
 
 	&__photo--p2 {
-		right: 0;
-		top: 4rem;
+		right: 1rem;
+		top: -3rem;
 	}
 
 	&__photo--p3 {
 		left: 20%;
-		top: 13rem;
+		top: 5rem;
 	}
 }
 
 h2.heading-2 {
 	margin-bottom: 2cm;
+}
+
+.box__parent {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	padding: 0.4cm;
+}
+
+.box__child {
+	&--image {
+		width: 100%;
+		background-size: cover;
+		grid-column: 1/6;
+	}
+	&--textBox {
+		padding-left: 0.5cm;
+		text-align: left;
+		grid-column: 6/13;
+	}
 }

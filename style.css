@@ -25,7 +25,7 @@ body {
   background: #cccccc;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: #000;
+  color: #f7f7f7;
   position: relative;
 }
 
@@ -93,6 +93,10 @@ page.page-1 {
   box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.2);
 }
 
+.space-20 {
+  margin-top: 20cm;
+}
+
 header {
   width: 100%;
   height: 20%;
@@ -158,21 +162,38 @@ header {
   transition: all 0.2s;
   z-index: 10;
 }
-.composition_photo--p1 {
-  left: 0;
-  top: 0;
+.composition__photo--p1 {
+  left: 1rem;
+  top: -7rem;
 }
 .composition__photo--p2 {
-  right: 0;
-  top: 4rem;
+  right: 1rem;
+  top: -3rem;
 }
 .composition__photo--p3 {
   left: 20%;
-  top: 13rem;
+  top: 5rem;
 }
 
 h2.heading-2 {
   margin-bottom: 2cm;
+}
+
+.box__parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0.4cm;
+}
+
+.box__child--image {
+  width: 100%;
+  background-size: cover;
+  grid-column: 1/6;
+}
+.box__child--textBox {
+  padding-left: 0.5cm;
+  text-align: left;
+  grid-column: 6/13;
 }
 
 @media print {
