@@ -50,6 +50,9 @@ page[size=A2][layout=landscape] {
 page.page-1 {
   background-image: linear-gradient(to right bottom, rgba(52, 138, 199, 0.7), rgba(116, 116, 191, 0.7));
 }
+page.page-2 {
+  background-image: linear-gradient(to right bottom, #71b280, rgba(19, 78, 94, 0.5));
+}
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -85,7 +88,27 @@ page.page-1 {
   width: calc(100% - calc((100% - 3 * 0.25rem) / 4) - 0.25rem);
 }
 
+.box__parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0.4cm;
+}
+
+.box__child--image {
+  width: 100%;
+  background-size: cover;
+  border-radius: 15px;
+  grid-column: 1/6;
+}
+.box__child--textBox {
+  padding-left: 0.5cm;
+  text-align: left;
+  grid-column: 6/13;
+}
+
 .container {
+  display: flex;
+  flex-direction: column;
   margin: 0.75cm;
   text-align: center;
   background-color: rgba(197, 191, 191, 0.5);
@@ -142,6 +165,10 @@ header {
   text-indent: 5%;
 }
 
+h2.heading-2 {
+  margin: 2cm;
+}
+
 .image {
   height: 500px;
   width: 100%;
@@ -173,27 +200,6 @@ header {
 .composition__photo--p3 {
   left: 20%;
   top: 5rem;
-}
-
-h2.heading-2 {
-  margin-bottom: 2cm;
-}
-
-.box__parent {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  padding: 0.4cm;
-}
-
-.box__child--image {
-  width: 100%;
-  background-size: cover;
-  grid-column: 1/6;
-}
-.box__child--textBox {
-  padding-left: 0.5cm;
-  text-align: left;
-  grid-column: 6/13;
 }
 
 @media print {

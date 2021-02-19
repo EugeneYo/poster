@@ -46,3 +46,23 @@ $threeFourth: calc(100% - #{$oneFourth} - #{$gutter-horizontal});
 		width: $threeFourth;
 	}
 }
+
+.box__parent {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	padding: 0.4cm;
+}
+
+.box__child {
+	&--image {
+		width: 100%;
+		background-size: cover;
+		border-radius: 15px;
+		grid-column: 1/6;
+	}
+	&--textBox {
+		padding-left: 0.5cm;
+		text-align: left;
+		grid-column: 6/13;
+	}
+}
