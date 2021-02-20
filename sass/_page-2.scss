@@ -47,6 +47,7 @@
 	&-main {
 		grid-column: 1/4;
 
+		text-align: left;
 		height: 100%;
 		font-size: 1.2cm;
 		align-items: center;
@@ -80,7 +81,7 @@
 
 	&-main {
 		grid-column: 10/13;
-
+		text-align: right;
 		height: 100%;
 		font-size: 1.2cm;
 		align-items: center;

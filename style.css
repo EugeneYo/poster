@@ -54,6 +54,9 @@ page.page-1 {
 page.page-2 {
   background-image: linear-gradient(to right bottom, #71b280, rgba(19, 78, 94, 0.5));
 }
+page.page-3 {
+  background-color: #f1567a;
+}
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -278,6 +281,7 @@ page.page-2 {
 }
 .strategy__left-main {
   grid-column: 1/4;
+  text-align: left;
   height: 100%;
   font-size: 1.2cm;
   align-items: center;
@@ -308,6 +312,7 @@ page.page-2 {
 }
 .strategy__right-main {
   grid-column: 10/13;
+  text-align: right;
   height: 100%;
   font-size: 1.2cm;
   align-items: center;
@@ -328,6 +333,104 @@ page.page-2 {
   background-color: #f4f1e5;
   color: #2b2a55;
   font-weight: 600;
+}
+
+.dont__header {
+  display: block;
+  width: 40%;
+  height: 20%;
+  background-image: linear-gradient(120deg, #ed3260, #ed3260);
+  clip-path: polygon(0 0, 100% 0, 0% 100%, 0 0);
+}
+.dont__header-text {
+  font-size: 4cm;
+  transform: rotate(-35.5deg) translateY(1cm) translateX(-1cm);
+  font-family: "Rye", cursive;
+}
+
+.line {
+  max-width: 100%;
+  display: inline-flex;
+  background-color: rgba(197, 191, 191, 0.5);
+  border-radius: 100px;
+  box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.2);
+  margin: 1cm;
+  padding-right: 5cm;
+}
+.line__left {
+  margin-left: 5cm;
+}
+.line__right {
+  margin-right: 5cm;
+}
+.line__circle {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  text-align: center;
+  font-size: 2.5cm;
+  padding: 3px;
+  background-image: linear-gradient(to right, red, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.line__text {
+  display: flex;
+  align-items: center;
+  padding-left: 3cm;
+  font-size: 1.5cm;
+}
+
+.do__header {
+  display: block;
+  width: 100%;
+  height: 20%;
+  background-image: linear-gradient(120deg, #74cec3, #74cec3);
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 60% 0);
+}
+.do__header-text {
+  font-size: 4cm;
+  transform: rotate(35.5deg) translateY(-6.3cm) translateX(-3cm);
+  font-family: "Rye", cursive;
+  text-align: right;
+}
+
+.another-line {
+  max-width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  background-color: rgba(197, 191, 191, 0.5);
+  border-radius: 100px;
+  box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.2);
+  margin: 1cm;
+  padding-left: 1cm;
+}
+.another-line__left {
+  margin-left: 5cm;
+}
+.another-line__right {
+  margin-right: 5cm;
+}
+.another-line__circle {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: yellow;
+  text-align: center;
+  font-size: 2.5cm;
+  padding: 3px;
+  background-image: linear-gradient(to right, #74cec3, #74cec3);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.another-line__text {
+  display: flex;
+  align-items: center;
+  padding-right: 4cm;
+  font-size: 1.5cm;
 }
 
 @media print {
