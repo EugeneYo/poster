@@ -50,19 +50,22 @@ $threeFourth: calc(100% - #{$oneFourth} - #{$gutter-horizontal});
 .box__parent {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	padding: 0.4cm;
+	// padding: 0.4cm;
+	height: 30%;
+	justify-content: center;
+	align-items: center;
 }
 
 .box__child {
 	&--image {
-		width: 100%;
-		background-size: cover;
+		height: 100%;
 		border-radius: 15px;
-		grid-column: 1/6;
+		grid-column: 1/4;
 	}
+
 	&--textBox {
 		padding-left: 0.5cm;
 		text-align: left;
-		grid-column: 6/13;
+		grid-column: 4/13;
 	}
 }

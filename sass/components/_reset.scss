@@ -29,6 +29,7 @@ page {
 	margin-bottom: 0.5cm;
 	box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 	position: relative;
+	overflow: hidden;
 
 	&[size="A2"] {
 		width: 42cm;
