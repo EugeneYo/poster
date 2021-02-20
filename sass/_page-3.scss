@@ -1,56 +1,195 @@
-.dont__header {
-	display: block;
-	width: 40%;
-	height: 20%;
-	background-image: linear-gradient(120deg, rgba(#ed3260, 1), rgba(#ed3260, 1));
-	clip-path: polygon(0 0, 100% 0, 0% 100%, 0 0);
+.composition {
+	position: relative;
+	margin: 1cm;
 
-	&-text {
-		font-size: 4cm;
-		transform: rotate(-35.5deg) translateY(1cm) translateX(-1cm);
-		font-family: "Rye", cursive;
+	&__photo {
+		width: 50%;
+		box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+		border-radius: 2px;
+		position: absolute;
+		transition: all 0.2s;
+		z-index: 10;
+	}
+
+	&__photo--p1 {
+		left: 1rem;
+		top: -7rem;
+	}
+
+	&__photo--p2 {
+		right: 1rem;
+		top: -3rem;
+	}
+
+	&__photo--p3 {
+		left: 20%;
+		top: 5rem;
 	}
 }
 
-.line {
-	max-width: 100%;
-	// margin: 0 auto;
-	display: inline-flex;
-	background-color: rgba(197, 191, 191, 0.5);
-	border-radius: 100px;
-	box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.2);
-	margin: 1cm;
-	padding-right: 5cm;
-	// margin-left: 5cm;
-	// margin: 2cm;
+.topic {
+	height: 5%;
+	text-align: center;
+	background-color: #33325b;
+	font-size: 0.9cm;
+	word-spacing: 5px;
 
-	&__left {
-		margin-left: 5cm;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.strategy__left {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 15%;
+	border-bottom: 10px solid #74cec3;
+
+	&-main {
+		grid-column: 1/4;
+
+		text-align: left;
+		// height: 100%;
+		font-size: 0.8cm;
+		// align-items: center;
+		justify-content: space-evenly;
+		display: flex;
+		flex-direction: column;
+		background-color: #74cec3;
+		color: #f4f1e5;
+		padding: 1cm;
 	}
 
-	&__right {
-		margin-right: 5cm;
-	}
+	&-secondary {
+		grid-column: 4/13;
 
-	&__circle {
-		display: inline-block;
-		height: 100px;
-		width: 100px;
-		border-radius: 50%;
-		background-color: yellow;
-		text-align: center;
-		font-size: 2.5cm;
-		padding: 3px;
-
-		background-image: linear-gradient(to right, rgb(255, 0, 0), red);
-		-webkit-background-clip: text; // clip the background image color to the text
-		color: transparent;
-	}
-
-	&__text {
+		width: 100%;
+		// height: 100%;
+		padding: 1cm;
 		display: flex;
 		align-items: center;
-		padding-left: 3cm;
-		font-size: 1.5cm;
+		background-color: #f4f1e5;
+		color: #2b2a55;
+		font-weight: 600;
+	}
+}
+
+.strategy__right {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	height: 17%;
+	border-bottom: 10px solid #74cec3;
+
+	&-main {
+		grid-column: 10/13;
+		text-align: right;
+		height: 100%;
+		font-size: 0.8cm;
+		// align-items: center;
+		justify-content: space-evenly;
+		display: flex;
+		flex-direction: column;
+		background-color: #74cec3;
+		color: #f4f1e5;
+		padding: 1cm;
+	}
+
+	&-secondary {
+		grid-column: 1/10;
+
+		width: 100%;
+		height: 100%;
+		padding: 1cm;
+		display: flex;
+		align-items: center;
+		background-color: #f4f1e5;
+		color: #2b2a55;
+		font-weight: 600;
+	}
+}
+
+.myTable {
+	padding: 0.5cm;
+	margin-top: 1cm;
+}
+
+div.blueTable {
+	// border: 4px solid #1c6ea4;
+	color: #15171b;
+	width: 100%;
+	height: 50%;
+	// text-align: center;
+	border-collapse: collapse;
+}
+.divTable.blueTable .divTableCell,
+.divTable.blueTable .divTableHead {
+	padding: 1cm 2cm;
+}
+.divTable.blueTable .divTableBody .divTableCell {
+	font-size: 1cm;
+	font-weight: 700;
+}
+.divTable.blueTable .divTableRow:nth-child(even) {
+	background: #ede2d0;
+}
+.divTable.blueTable .divTableHeading {
+	background: #ede2d0;
+	border-bottom: 0.3cm solid #f47738;
+}
+.divTable.blueTable .divTableHeading .divTableHead {
+	font-size: 1.5cm;
+	font-weight: bolder;
+	color: #15171b;
+	// text-align: center;
+	// border-left: 1px dotted #f47738;
+}
+.divTable.blueTable .divTableHeading .divTableHead:first-child {
+	border-left: none;
+}
+
+/* DivTable.com */
+.divTable {
+	display: table;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableCell {
+	display: table-cell;
+	&:not(:first-child) {
+		border-left: 0.2cm solid #f47738;
+	}
+}
+
+.divTableHead {
+	display: table-cell;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableFoot {
+	display: table-footer-group;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.wrap {
+	display: inline-flex;
+	align-items: center;
+
+	.icon-do {
+		padding-right: 3cm;
+		color: #74cec3;
+		font-size: 3cm;
+	}
+
+	.icon-dont {
+		padding-right: 3cm;
+		color: red;
+		font-size: 3cm;
 	}
 }
