@@ -1,7 +1,7 @@
 .topic {
 	height: 5%;
 	text-align: center;
-	background-color: #33325b;
+	background-color: $primary-dark;
 	font-size: 0.9cm;
 	word-spacing: 5px;
 
@@ -14,15 +14,14 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	height: 17%;
-	border-bottom: 10px solid #74cec3;
+	border-top: 35px solid $primary-light;
 
 	.main {
 		font-size: 0.8cm;
 		justify-content: space-evenly;
 		display: flex;
 		flex-direction: column;
-		background-color: #74cec3;
-		color: #f4f1e5;
+		background-color: $primary-light;
 		padding: 1cm;
 	}
 
@@ -30,9 +29,8 @@
 		padding: 1cm;
 		display: flex;
 		align-items: center;
-		background-color: #f4f1e5;
-		color: #2b2a55;
-		font-weight: 600;
+		background-color: $primary-dark;
+		font-weight: 500;
 	}
 
 	&:nth-child(even) {
@@ -43,16 +41,26 @@
 
 		.secondary {
 			grid-column: 4/13;
+			box-shadow: -0.2cm -0.5cm 1cm rgba($color: #000000, $alpha: 1);
+			margin-right: 0.5cm;
 		}
 	}
 
 	&:nth-child(odd) {
+		position: relative;
 		.main {
 			grid-column: 10/13;
 			text-align: right;
+			position: absolute;
+			z-index: 5;
 		}
 		.secondary {
 			grid-column: 1/10;
+			margin-right: 0.5cm;
+			box-shadow: 0.2cm -0.5cm 1cm rgba($color: #000000, $alpha: 1);
+			z-index: 10;
+
+			margin-left: 0.5cm;
 		}
 	}
 }
@@ -63,30 +71,28 @@
 }
 
 .divTable.blueTable {
-	color: #15171b;
 	width: 100%;
 	height: 50%;
 	border-collapse: collapse;
 
 	.divTableCell {
 		font-size: 1cm;
-		font-weight: 700;
+		font-weight: 500;
 		padding: 1cm 1.5cm;
 	}
 
 	.divTableRow:nth-child(even) {
-		background: #ede2d0;
+		background: $primary-dark;
 	}
 
 	.divTableHeading {
-		background: #ede2d0;
-		border-bottom: 0.3cm solid #f47738;
+		background: $primary-dark;
+		border-bottom: 0.3cm solid #f0e6d2;
 	}
 
 	.divTableHead {
 		font-size: 1.5cm;
 		font-weight: bolder;
-		color: #15171b;
 		padding: 1cm 1.5cm;
 
 		&:first-child {
@@ -116,7 +122,7 @@
 .divTableCell {
 	display: table-cell;
 	&:not(:first-child) {
-		border-left: 0.2cm solid #f47738;
+		border-left: 0.2cm solid;
 	}
 }
 
@@ -126,13 +132,13 @@
 
 	.icon-do {
 		padding-right: 3cm;
-		color: #74cec3;
+		color: $primary-light;
 		font-size: 3cm;
 	}
 
 	.icon-dont {
 		padding-right: 3cm;
-		color: red;
+		color: $primary-light;
 		font-size: 3cm;
 	}
 }
