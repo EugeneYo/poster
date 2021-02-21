@@ -134,7 +134,7 @@ page.page-5 {
   padding-top: 4cm;
   height: 65%;
   overflow: hidden;
-  background-image: linear-gradient(to right bottom, rgba(26, 45, 52, 0.7), rgba(26, 45, 52, 0.7)), url(../img/handshake.jpg);
+  background-image: linear-gradient(to right bottom, rgba(26, 45, 52, 0.7), rgba(26, 45, 52, 0.7)), url(./img/handshake.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
