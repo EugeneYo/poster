@@ -1,8 +1,5 @@
-@import "components/abstract";
-@import "components/reset";
-@import "components/grid";
-@import "components/container";
-@import "components/space";
+@import "abstract";
+@import "basic";
 
 @import "page-1";
 @import "page-2";
@@ -12,7 +9,8 @@
 @media print {
 	body,
 	page {
-		margin: 0.78cm auto;
+		margin: 0 auto;
 		box-shadow: 0;
+		-webkit-print-color-adjust: exact;
 	}
 }

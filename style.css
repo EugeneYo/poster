@@ -30,9 +30,7 @@ body {
 }
 
 page {
-  background: #f8bc6e;
   display: block;
-  /* padding: 0; */
   margin: 0 auto;
   margin-top: 0.5cm;
   margin-bottom: 0.5cm;
@@ -44,10 +42,6 @@ page[size=A2] {
   width: 42cm;
   height: 59.4cm;
 }
-page[size=A2][layout=landscape] {
-  width: 59.4cm;
-  height: 42cm;
-}
 page.page-1 {
   background-image: linear-gradient(to right bottom, rgba(52, 138, 199, 0.7), rgba(116, 116, 191, 0.7));
 }
@@ -57,79 +51,6 @@ page.page-2 {
 page.page-3 {
   background-color: white;
 }
-page.page-5 {
-  padding: 1cm;
-  background-color: white;
-}
-
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
-}
-.row:not(:last-child) {
-  margin-bottom: 8rem;
-}
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row [class^=col-] {
-  float: left;
-}
-.row [class^=col-]:not(:last-child) {
-  margin-right: 0.25rem;
-}
-.row .col-1-of-2,
-.row .col-2-of-4 {
-  width: calc((100% - 0.25rem) / 2);
-}
-.row .col-1-of-3 {
-  width: calc((100% - 2 * 0.25rem) / 3);
-}
-.row .col-2-of-3 {
-  width: calc(100% - calc((100% - 2 * 0.25rem) / 3) - 0.25rem);
-}
-.row .col-1-of-4 {
-  width: calc((100% - 3 * 0.25rem) / 4);
-}
-.row .col-3-of-4 {
-  width: calc(100% - calc((100% - 3 * 0.25rem) / 4) - 0.25rem);
-}
-
-.box__parent {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  height: 30%;
-  justify-content: center;
-  align-items: center;
-}
-
-.box__child--image {
-  height: 100%;
-  border-radius: 15px;
-  grid-column: 1/4;
-}
-.box__child--textBox {
-  padding-left: 0.5cm;
-  text-align: left;
-  grid-column: 4/13;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 0.75cm;
-  text-align: center;
-  background-color: rgba(197, 191, 191, 0.5);
-  border-radius: 20px;
-  box-shadow: 0 0.5cm 1cm rgba(0, 0, 0, 0.2);
-}
-
-.space-20 {
-  margin-top: 20cm;
-}
-
 .header__main {
   padding-top: 4cm;
   height: 65%;
@@ -261,8 +182,10 @@ page.page-5 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-weight: bolder;
+  font-weight: 500;
   font-size: 3cm;
+  color: #f4f1e5;
+  transform: scale(1.2);
 }
 .stages__content .circleText:nth-child(even) {
   grid-column: 11/12;
@@ -399,8 +322,9 @@ page.page-5 {
 @media print {
   body,
 page {
-    margin: 0.78cm auto;
+    margin: 0 auto;
     box-shadow: 0;
+    -webkit-print-color-adjust: exact;
   }
 }
 

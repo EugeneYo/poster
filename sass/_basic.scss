@@ -21,9 +21,7 @@ body {
 }
 
 page {
-	background: rgb(248, 188, 110);
 	display: block;
-	/* padding: 0; */
 	margin: 0 auto;
 	margin-top: 0.5cm;
 	margin-bottom: 0.5cm;
@@ -35,10 +33,10 @@ page {
 		width: 42cm;
 		height: 59.4cm;
 
-		&[layout="landscape"] {
-			width: 59.4cm;
-			height: 42cm;
-		}
+		// &[layout="landscape"] {
+		// 	width: 59.4cm;
+		// 	height: 42cm;
+		// }
 	}
 
 	// Setting background color with linear-gradient for pages
@@ -47,8 +45,6 @@ page {
 	}
 
 	&.page-2 {
-		// background-color: #348f50;
-		// background-image: linear-gradient(to right bottom, rgba(#56b4d3, 1) 50%, rgba(#348f50, 1));
 		background-color: #1c92d2;
 	}
 
@@ -57,10 +53,5 @@ page {
 	}
 
 	&.page-4 {
-	}
-
-	&.page-5 {
-		padding: 1cm;
-		background-color: white;
 	}
 }
