@@ -2,28 +2,26 @@
 	height: 100%;
 
 	&__topic {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		height: 7%;
 		text-align: center;
 		font-size: 1.5cm;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&__content {
 		height: 14.5%;
 		padding: 1cm;
 		position: relative;
+
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		justify-content: center;
 		align-items: center;
-		// font-weight: bold;
-		// grid-auto-flow: column;
 
 		background-color: #33325b9d;
-		// background-color: rgba(197, 191, 191, 0.5);
-
 		border-radius: 20px;
 		box-shadow: 0 1cm 2cm rgba(0, 0, 0, 0.2);
 		margin: 0.5cm 0.75cm;
@@ -31,111 +29,32 @@
 		&-right {
 			grid-column: 3/13;
 			padding-left: 3cm;
+
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
-			// align-items: center;
 		}
 
 		&-left {
 			grid-column: 1/11;
 			padding-right: 1cm;
 			padding-left: 3cm;
+
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
-			// align-items: center;
 		}
 
-		.circleText-1 {
-			grid-column: 2/3;
-			// background-color: #56b4d3;
-			background-color: #1c92d2;
-
-			height: 5cm;
-			width: 5cm;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			font-weight: bolder;
-			font-size: 3cm;
+		[class^="circleText"] {
+			@include circle;
 		}
-		.circleText-2 {
+
+		.circleText:nth-child(even) {
 			grid-column: 11/12;
-			// background-image: linear-gradient(125deg, rgba(#56b4d3, 0.7) 5%, rgba(#348f50, 0.3));
-			background-color: #1c92d2;
-
-			height: 5cm;
-			width: 5cm;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			font-weight: bolder;
-			font-size: 3cm;
 		}
-		.circleText-3 {
+
+		.circleText:nth-child(odd) {
 			grid-column: 2/3;
-			// background-color: #56b4d3;
-			background-color: #1c92d2;
-
-			height: 5cm;
-			width: 5cm;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			font-weight: bolder;
-			font-size: 3cm;
-		}
-		.circleText-4 {
-			grid-column: 11/12;
-			// background-image: linear-gradient(150deg, rgba(#419786, 0.8) 10%, rgba(#348f50, 0.8));
-			background-color: #1c92d2;
-
-			height: 5cm;
-			width: 5cm;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			font-weight: bolder;
-			font-size: 3cm;
-		}
-		.circleText-5 {
-			grid-column: 2/3;
-			// background-color: #56b4d3;
-			background-color: #1c92d2;
-
-			height: 5cm;
-			width: 5cm;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			font-weight: bolder;
-			font-size: 3cm;
-		}
-		.circleText-6 {
-			grid-column: 11/12;
-			// background-color: #348f50;
-			background-color: #1c92d2;
-
-			height: 5cm;
-			width: 5cm;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			font-weight: bolder;
-			font-size: 3cm;
 		}
 	}
 }

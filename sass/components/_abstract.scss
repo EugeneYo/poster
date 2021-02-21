@@ -44,3 +44,16 @@ $shifter-1: #f80759;
 		clear: both;
 	}
 }
+
+@mixin circle {
+	background-color: #1c92d2;
+	height: 5cm;
+	width: 5cm;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 3cm;
+}

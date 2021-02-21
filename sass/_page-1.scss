@@ -5,6 +5,7 @@
 	background-image: linear-gradient(to right bottom, rgb(26, 45, 52, 0.7), rgb(26, 45, 52, 0.7)), url(./img/handshake.jpg);
 	background-size: cover;
 	background-position: top;
+
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -40,79 +41,43 @@
 	height: 25%;
 	color: #1e343c;
 
-	&__1 {
-		grid-column: 1/5;
+	span {
+		padding: 25px;
+		font-size: 2cm;
+		grid-row: 1/2;
+		font-weight: 700;
+		text-decoration-line: underline;
+	}
 
-		border: 0.1px solid $grey-dark;
-		background-color: #37948a;
+	p {
+		grid-row: 2/4;
+		justify-content: center;
+		padding: 0 2cm;
+	}
+
+	&__ {
 		text-align: center;
-
 		display: grid;
 		grid-template-rows: repeat(3, 1fr);
+	}
 
-		span {
-			// margin-bottom: 3cm;
-			padding: 25px;
-			font-size: 2cm;
-			grid-row: 1/2;
-			font-weight: 700;
-			text-decoration-line: underline;
-		}
-
+	&__1 {
+		grid-column: 1/5;
+		background-color: #37948a;
 		p {
-			grid-row: 2/4;
-			justify-content: center;
-			padding: 0 2cm;
-			font-weight: 500;
 			font-size: 1.1cm;
 		}
 	}
 
 	&__2 {
 		grid-column: 5/9;
-		border: 0.1px solid $grey-dark;
 		background-color: #f7d677;
-		text-align: center;
-
-		display: grid;
-		grid-template-rows: repeat(3, 1fr);
-
-		span {
-			padding: 25px;
-			font-size: 2cm;
-			grid-row: 1/2;
-			font-weight: 700;
-			text-decoration-line: underline;
-		}
-
-		p {
-			grid-row: 2/4;
-			justify-content: center;
-			padding: 0 2cm;
-		}
 	}
 
 	&__3 {
 		grid-column: 9/13;
-		border: 0.1px solid $grey-dark;
 		background-color: #f6a564;
-		text-align: center;
-
-		display: grid;
-		grid-template-rows: repeat(3, 1fr);
-		span {
-			padding: 25px;
-			font-size: 2cm;
-			grid-row: 1/2;
-			font-weight: 700;
-			text-decoration-line: underline;
-		}
-
 		p {
-			grid-row: 2/4;
-			justify-content: center;
-			padding: 0 2cm;
-			padding-bottom: 1cm;
 			font-size: 1.1cm;
 		}
 	}
@@ -121,10 +86,7 @@
 .explaination {
 	height: 100%;
 	text-align: center;
-	justify-content: center;
-	// margin-top: 20px;
 	padding-top: 50px;
 	font-size: 1.3cm;
-
 	background-color: #d36448;
 }
