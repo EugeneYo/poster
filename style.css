@@ -88,15 +88,15 @@ page.page-3 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: 25%;
-  z-index: 5;
-  position: relative;
+  gap: 0.6cm;
 }
 .textBox span {
-  padding: 50px;
+  padding: 25px;
   font-size: 2cm;
   grid-row: 1/2;
   font-weight: 700;
   text-decoration-line: underline;
+  border-radius: 15px;
 }
 .textBox p {
   grid-row: 2/4;
@@ -108,7 +108,6 @@ page.page-3 {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   padding: 0.5cm;
-  margin: 0.2cm 0 0cm 0.6cm;
   border-radius: 15px;
   box-shadow: 0 0.5cm 0.5cm black;
   transform: translateY(-4cm);
@@ -116,6 +115,9 @@ page.page-3 {
 }
 .textBox__:last-child {
   margin-right: 0.6cm;
+}
+.textBox__:first-child {
+  margin-left: 0.6cm;
 }
 .textBox__1 {
   grid-column: 1/5;
@@ -320,10 +322,6 @@ page.page-3 {
 .divTableCell {
   display: table-cell;
 }
-.divTableCell:not(:first-child) {
-  border-left: 0.2cm solid;
-}
-
 .wrap {
   display: inline-flex;
   align-items: center;
@@ -332,11 +330,26 @@ page.page-3 {
   padding-right: 3cm;
   color: #1c92d2;
   font-size: 3cm;
+  filter: drop-shadow(-0.3cm -0.6cm 0.1cm black);
+  transform: translateX(1.5cm);
 }
 .wrap .icon-dont {
   padding-right: 3cm;
   color: #1c92d2;
   font-size: 3cm;
+  filter: drop-shadow(-0.3cm -0.6cm 0.1cm black);
+  transform: translateX(1.5cm);
+}
+.wrap .icon-dont::after {
+  content: "";
+  height: 810%;
+  width: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #f0e6d2;
+  transform: translate(-4cm);
 }
 
 @media print {

@@ -39,15 +39,18 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	height: 25%;
-	z-index: 5;
-	position: relative;
+	gap: 0.6cm;
+	// z-index: 5;
+	// position: relative;
 
 	span {
-		padding: 50px;
+		padding: 25px;
 		font-size: 2cm;
 		grid-row: 1/2;
 		font-weight: 700;
 		text-decoration-line: underline;
+		// background-color: $primary-dark;
+		border-radius: 15px;
 	}
 
 	p {
@@ -61,14 +64,18 @@
 		display: grid;
 		grid-template-rows: repeat(3, 1fr);
 		padding: 0.5cm;
-		margin: 0.2cm 0 0cm 0.6cm;
+		// margin: 0.2cm 0 0cm 0.6cm;
 		border-radius: 15px;
 		box-shadow: 0 0.5cm 0.5cm rgba($color: #000000, $alpha: 1);
 		transform: translateY(-4cm);
 		font-size: 1.2cm;
+		// background-color: $primary-dark;
 
 		&:last-child {
 			margin-right: 0.6cm;
+		}
+		&:first-child {
+			margin-left: 0.6cm;
 		}
 	}
 

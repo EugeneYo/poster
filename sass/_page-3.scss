@@ -122,7 +122,7 @@
 .divTableCell {
 	display: table-cell;
 	&:not(:first-child) {
-		border-left: 0.2cm solid;
+		// border-left: 0.2cm solid;
 	}
 }
 
@@ -134,11 +134,40 @@
 		padding-right: 3cm;
 		color: $primary-light;
 		font-size: 3cm;
+		filter: drop-shadow(-0.3cm -0.6cm 0.1cm rgba($color: #000000, $alpha: 1));
+		transform: translateX(1.5cm);
+		// &::after {
+		// 	content: "";
+		// 	height: 10%;
+		// 	width: 685%;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	display: inline-block;
+		// 	background-color: #f0e6d2;
+		// 	transform: translate(-3cm, 4cm);
+		// 	filter: drop-shadow(0 0 0 rgba($color: #000000, $alpha: 0));
+		// }
 	}
 
 	.icon-dont {
 		padding-right: 3cm;
 		color: $primary-light;
 		font-size: 3cm;
+		filter: drop-shadow(-0.3cm -0.6cm 0.1cm rgba($color: #000000, $alpha: 1));
+		transform: translateX(1.5cm);
+
+		&::after {
+			content: "";
+			height: 810%;
+			width: 5%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			background-color: #f0e6d2;
+			transform: translate(-4cm);
+			// filter: drop-shadow(-0.3cm -0.5cm 0.1cm rgba($color: #000000, $alpha: 1));
+		}
 	}
 }
