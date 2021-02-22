@@ -60,12 +60,12 @@
 
 		.circleText:nth-child(even) {
 			grid-column: 11/12;
-			box-shadow: -0.5cm -0.5cm 1cm rgba($color: #000000, $alpha: 1);
+			// box-shadow: -0.5cm -0.5cm 1cm rgba($color: #000000, $alpha: 1);
 		}
 
 		.circleText:nth-child(odd) {
 			grid-column: 2/3;
-			box-shadow: 0.5cm -0.5cm 1cm rgba($color: #000000, $alpha: 1);
+			// box-shadow: 0.5cm -0.5cm 1cm rgba($color: #000000, $alpha: 1);
 		}
 	}
 }

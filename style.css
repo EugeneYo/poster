@@ -25,7 +25,7 @@ body {
   background: #cccccc;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: #f0e6d2;
+  color: whitesmoke;
   position: relative;
 }
 
@@ -33,7 +33,7 @@ page {
   display: block;
   margin: 0 auto;
   margin-top: 0.5cm;
-  margin-bottom: 0.5cm;
+  margin-bottom: 2cm;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
@@ -43,13 +43,15 @@ page[size=A2] {
   height: 59.4cm;
 }
 page.page-1 {
-  background-color: #1c92d2;
+  background-color: #0594b4;
 }
 page.page-2 {
   background-color: #1c92d2;
+  background-image: linear-gradient(to right bottom, #0594b4 25%, #0099e7);
 }
 page.page-3 {
-  background-color: #1c92d2;
+  background-color: #0594b4;
+  background-image: linear-gradient(to right bottom, #0594b4 25%, #0099e7);
 }
 .header__main {
   padding-top: 4cm;
@@ -70,7 +72,7 @@ page.page-3 {
   text-shadow: 0 1cm 1cm #000;
 }
 .header__main .heading__text span {
-  color: #1c92d2;
+  color: #0099e7;
   font-family: "Rye", cursive;
 }
 .header__main .shape__wrap {
@@ -80,7 +82,7 @@ page.page-3 {
   margin-top: 5cm;
   width: 5cm;
   height: 5cm;
-  background-color: #1c92d2;
+  background-color: #0099e7;
   clip-path: polygon(0 0, 100% 0, 50% 50%, 0 0);
 }
 
@@ -121,15 +123,17 @@ page.page-3 {
 }
 .textBox__1 {
   grid-column: 1/5;
-  background-color: #1c92d2;
+  background-color: rgba(0, 153, 231, 0.8);
 }
 .textBox__2 {
   grid-column: 5/9;
-  background-color: #1c92d2;
+  background-color: #0099e7;
+  background-color: rgba(0, 153, 231, 0.8);
 }
 .textBox__3 {
   grid-column: 9/13;
-  background-color: #1c92d2;
+  background-color: #0099e7;
+  background-color: rgba(0, 153, 231, 0.8);
 }
 
 .explaination {
@@ -202,11 +206,9 @@ page.page-3 {
 }
 .stages__content .circleText:nth-child(even) {
   grid-column: 11/12;
-  box-shadow: -0.5cm -0.5cm 1cm black;
 }
 .stages__content .circleText:nth-child(odd) {
   grid-column: 2/3;
-  box-shadow: 0.5cm -0.5cm 1cm black;
 }
 
 .topic {
@@ -224,14 +226,15 @@ page.page-3 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   height: 17%;
-  border-top: 35px solid #1c92d2;
+  border-top: 35px solid;
+  border-color: transparent;
 }
 [class^=strategy__] .main {
   font-size: 0.8cm;
   justify-content: space-evenly;
   display: flex;
   flex-direction: column;
-  background-color: #1c92d2;
+  background-color: inherit;
   padding: 1cm;
 }
 [class^=strategy__] .secondary {
@@ -279,7 +282,7 @@ page.page-3 {
 }
 .divTable.blueTable .divTableCell {
   font-size: 1cm;
-  font-weight: 500;
+  font-weight: 600;
   padding: 1cm 1.5cm;
 }
 .divTable.blueTable .divTableRow:nth-child(even) {
@@ -328,14 +331,14 @@ page.page-3 {
 }
 .wrap .icon-do {
   padding-right: 3cm;
-  color: #1c92d2;
+  color: #0099e7;
   font-size: 3cm;
   filter: drop-shadow(-0.3cm -0.6cm 0.1cm black);
   transform: translateX(1.5cm);
 }
 .wrap .icon-dont {
   padding-right: 3cm;
-  color: #1c92d2;
+  color: #0099e7;
   font-size: 3cm;
   filter: drop-shadow(-0.3cm -0.6cm 0.1cm black);
   transform: translateX(1.5cm);

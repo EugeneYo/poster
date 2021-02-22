@@ -16,7 +16,8 @@ body {
 	background: rgb(204, 204, 204);
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
-	color: #f0e6d2;
+	// color: #f0e6d2;
+	color: whitesmoke;
 	position: relative;
 }
 
@@ -24,7 +25,7 @@ page {
 	display: block;
 	margin: 0 auto;
 	margin-top: 0.5cm;
-	margin-bottom: 0.5cm;
+	margin-bottom: 2cm;
 	box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 	position: relative;
 	overflow: hidden;
@@ -41,15 +42,23 @@ page {
 
 	// Setting background color with linear-gradient for pages
 	&.page-1 {
-		background-color: #1c92d2;
+		background-color: #0594b4;
+		// background-image: linear-gradient(to right bottom, rgba($purple-blue-1, 0.9) 20%, rgba($purple-blue-2, 1));
+		// background-image: linear-gradient(to right bottom, rgba($primary-light, 1) 25%, rgba(#0594b4, 1) 50%);
 	}
 
 	&.page-2 {
-		background-color: #1c92d2;
+		background-color: $primary-light-1;
+		background-image: linear-gradient(to right bottom, rgba(#0594b4, 1) 25%, rgba($primary-light, 1));
 	}
 
 	&.page-3 {
-		background-color: #1c92d2;
+		background-color: #0594b4;
+		// background-image: linear-gradient(to right bottom, rgba($primary-light, 1) 25%, rgba($purple-blue-2, 1) 50%);
+
+		// background-image: linear-gradient(to right bottom, rgba($purple-blue-1, 0.9) 20%, rgba($purple-blue-2, 1));
+		background-image: linear-gradient(to right bottom, rgba(#0594b4, 1) 25%, rgba($primary-light, 1));
+		// background-color: white;
 	}
 
 	&.page-4 {
