@@ -35,23 +35,26 @@
 		border-radius: 20px;
 		margin: 1cm 1cm;
 
+		h2 {
+			margin-bottom: 0.5cm;
+		}
 		&-right {
 			grid-column: 3/13;
-			padding-left: 3cm;
+			padding-left: 1.5cm;
 
 			display: flex;
+
 			flex-direction: column;
-			justify-content: space-evenly;
+			text-align: left;
 		}
 
 		&-left {
 			grid-column: 1/11;
-			padding-right: 1cm;
-			padding-left: 3cm;
+			padding-right: 1.5cm;
 
 			display: flex;
 			flex-direction: column;
-			justify-content: space-evenly;
+			text-align: right;
 		}
 
 		[class^="circleText"] {

@@ -190,20 +190,22 @@ page.page-3 {
   border-radius: 20px;
   margin: 1cm 1cm;
 }
+.stages__content h2 {
+  margin-bottom: 0.5cm;
+}
 .stages__content-right {
   grid-column: 3/13;
-  padding-left: 3cm;
+  padding-left: 1.5cm;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  text-align: left;
 }
 .stages__content-left {
   grid-column: 1/11;
-  padding-right: 1cm;
-  padding-left: 3cm;
+  padding-right: 1.5cm;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  text-align: right;
 }
 .stages__content [class^=circleText] {
   background-color: #1c92d2;
@@ -258,6 +260,7 @@ page.page-3 {
   align-items: center;
   background-color: #33325b9d;
   font-weight: 500;
+  text-align: justify;
 }
 [class^=strategy__]:nth-child(even) .main {
   grid-column: 1/4;
