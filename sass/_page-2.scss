@@ -2,7 +2,7 @@
 	height: 100%;
 
 	&__topic {
-		height: 5%;
+		height: 7%;
 		text-align: center;
 		font-size: 1.5cm;
 
@@ -22,7 +22,7 @@
 	// }
 
 	&__content {
-		height: 14%;
+		height: 14.5%;
 		padding: 1cm;
 		position: relative;
 
@@ -33,7 +33,7 @@
 
 		background-color: $primary-dark;
 		border-radius: 20px;
-		margin: 1cm 1cm;
+		margin: 0.5cm 1cm;
 
 		h2 {
 			margin-bottom: 0.5cm;
@@ -64,11 +64,15 @@
 		.circleText:nth-child(even) {
 			grid-column: 11/12;
 			// box-shadow: -0.5cm -0.5cm 1cm rgba($color: #000000, $alpha: 1);
+			// box-shadow: -0.7cm -0.7cm 0.5cm rgba($color: #000000, $alpha: 1);
+			transform: translateX(2cm) scale(1.2);
 		}
 
 		.circleText:nth-child(odd) {
 			grid-column: 2/3;
 			// box-shadow: 0.5cm -0.5cm 1cm rgba($color: #000000, $alpha: 1);
+			// box-shadow: -0.7cm -0.7cm 0.5cm rgba($color: #000000, $alpha: 1);
+			transform: translateX(-2cm) scale(1.2);
 		}
 	}
 }

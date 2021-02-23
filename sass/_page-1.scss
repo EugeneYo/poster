@@ -1,10 +1,10 @@
 .header__main {
-	padding-top: 4cm;
-	height: 65%;
+	padding-top: 2cm;
+	height: 67.5%;
 	overflow: hidden;
-	background-image: linear-gradient(to right bottom, rgb(26, 45, 52, 0.7), rgb(26, 45, 52, 0.7)), url(./img/handshake.jpg);
-	background-size: cover;
-	background-position: top;
+	background-image: linear-gradient(to right bottom, #1a2d34b3, rgb(26, 45, 52, 0.7)), url(./img/handshakeUS.jpg);
+	background-size: 200%;
+	background-position: 70% 20%;
 
 	position: relative;
 	display: flex;
@@ -14,7 +14,7 @@
 	.heading__text {
 		font-size: 4cm;
 		letter-spacing: 10px;
-		line-height: 6cm;
+		line-height: 5cm;
 		text-shadow: 0 1cm 1cm $black;
 		span {
 			color: $primary-light;
@@ -26,7 +26,7 @@
 		filter: drop-shadow(0 1cm 1cm $black);
 
 		.shape {
-			margin-top: 2cm;
+			margin-top: 9cm;
 			width: 4cm;
 			height: 5cm;
 			background-color: $primary-light;
@@ -44,7 +44,19 @@
 	// z-index: 5;
 	// position: relative;
 
-	.circular__image {
+	.circular__border-1 {
+		position: absolute;
+		float: left;
+
+		height: 12cm;
+		width: 12cm;
+		background-color: $primary-light;
+		top: -4.5cm;
+		transform: translate(0.5cm, -2.6cm);
+		border-radius: 50%;
+		// box-shadow: 0 0.5cm 0.5cm rgba($color: #000000, $alpha: 0.1);
+	}
+	.circular__image-1 {
 		height: 100%;
 		width: 100%;
 		// overflow: hidden;
@@ -54,7 +66,66 @@
 
 		clip-path: circle(40% at 90% 50%);
 		transform: translate(-5.2cm, -4cm);
-		// box-shadow: 0 0.5cm 0.5cm rgba($color: #000000, $alpha: 1);
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.circular__border-2 {
+		position: absolute;
+		float: left;
+
+		height: 12cm;
+		width: 12cm;
+		background-color: $primary-light;
+		top: -4.5cm;
+		transform: translate(0.7cm, -2.6cm);
+		border-radius: 50%;
+		// box-shadow: 0 0.5cm 0.5cm rgba($color: #000000, $alpha: 0.1);
+	}
+
+	.circular__image-2 {
+		height: 100%;
+		width: 100%;
+		// overflow: hidden;
+		position: absolute;
+		float: left;
+		top: -4.5cm;
+
+		clip-path: circle(39% at 75% 50%);
+		transform: translate(-3.5cm, -4cm);
+
+		img {
+			height: 100%;
+		}
+	}
+
+	.circular__border-3 {
+		position: absolute;
+		float: left;
+
+		height: 12cm;
+		width: 12cm;
+		background-color: $primary-light;
+		top: -4.5cm;
+		transform: translate(0.67cm, -2.6cm);
+		border-radius: 50%;
+		// box-shadow: 0 0.5cm 0.5cm rgba($color: #000000, $alpha: 0.1);
+	}
+	.circular__image-3 {
+		height: 100%;
+		width: 100%;
+		// overflow: hidden;
+		position: absolute;
+		float: left;
+		top: -4.5cm;
+		// background-image: url(./img/clarifying.jpg);
+		// background-position: 10% 50%;
+		// background-size: 150%;
+
+		clip-path: circle(40% at 75% 50%);
+		transform: translate(-3.08cm, -4cm);
 
 		img {
 			height: 100%;
@@ -73,8 +144,10 @@
 
 	p {
 		grid-row: 10/13;
-		justify-content: center;
-		padding: 25px 30px 50px 30px;
+		// justify-content: center;
+		// text-align: justify;
+		// text-align: center;
+		padding: 25px 5px 0 5px;
 		transform: translateY(-2cm);
 	}
 
@@ -84,7 +157,7 @@
 		grid-template-rows: repeat(12, 7%);
 		border-radius: 15px;
 		box-shadow: 0 0.5cm 0.5cm rgba($color: #000000, $alpha: 1);
-		transform: translateY(-4cm);
+		transform: translateY(-2.5cm);
 		font-size: 1.2cm;
 		position: relative;
 
@@ -98,29 +171,17 @@
 
 	&__1 {
 		grid-column: 1/5;
-		background-color: rgba($primary-light, 0.8);
-		// background-image: linear-gradient(to right bottom, rgba(#0594b4, 1) 25%, rgba($primary-light, 1));
-
-		// background-color: #0594b4;
-		// background-color: rgba($purple-blue-2, 0.6);
-		// background-image: linear-gradient(to bottom, rgba($purple-blue-2, 1), rgba($purple-blue-1, 0.7));
+		background-color: rgba($primary-light, 1);
 	}
 
 	&__2 {
 		grid-column: 5/9;
-		background-color: $primary-light;
-		background-color: rgba($primary-light, 0.8);
-
-		// background-color: #0594b4;
-		// background-image: linear-gradient(to bottom, rgba(#0594b4, 0.5) 20%, rgba(#0e6c97, 1));
+		background-color: rgba($primary-light, 1);
 	}
 
 	&__3 {
 		grid-column: 9/13;
-		background-color: $primary-light;
-		background-color: rgba($primary-light, 0.8);
-
-		// background-color: #0594b4;
+		background-color: rgba($primary-light, 1);
 	}
 }
 
@@ -129,13 +190,16 @@
 	text-align: center;
 	display: flex;
 	align-items: center;
-	padding: 2cm;
+	padding: 1cm;
 	font-size: 1.3cm;
 	margin: 1cm;
 	border-radius: 15px;
 	background-color: $primary-dark;
 	box-shadow: 0 0.75cm 1.5cm rgba($color: #000000, $alpha: 1);
-	transform: translateY(-3cm);
+	transform: translateY(-2.5cm);
 	position: absolute;
 	z-index: 100;
+
+	// background-color: #ede2d0;
+	// color: #ffffff;
 }

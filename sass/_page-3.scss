@@ -1,13 +1,29 @@
 .topic {
-	height: 5%;
+	height: 7%;
 	text-align: center;
-	background-color: $primary-dark;
+	// background-color: $primary-dark;
 	font-size: 0.9cm;
 	word-spacing: 5px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		height: 7cm;
+		width: 7cm;
+		border-radius: 50%;
+		background-image: url(./img/jingkai.jpeg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: 60% 90%;
+		background-color: blue;
+		top: 0.4cm;
+		left: 1.5cm;
+	}
 }
 
 [class^="strategy__"] {
@@ -88,7 +104,7 @@
 
 	.divTableHeading {
 		background: $primary-dark;
-		border-bottom: 0.3cm solid #f0e6d2;
+		// border-bottom: 0.3cm solid #f0e6d2;
 	}
 
 	.divTableHead {
@@ -166,7 +182,7 @@
 			top: 0;
 			left: 0;
 			display: inline-block;
-			background-color: #f0e6d2;
+			background-color: white;
 			transform: translate(-4cm);
 			// filter: drop-shadow(-0.3cm -0.5cm 0.1cm rgba($color: #000000, $alpha: 1));
 		}

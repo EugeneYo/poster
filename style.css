@@ -46,21 +46,19 @@ page.page-1 {
   background-color: #0594b4;
 }
 page.page-2 {
-  background-image: linear-gradient(to right bottom, rgba(5, 148, 180, 0.7) 25%, rgba(0, 153, 231, 0.7));
-  background-size: cover;
-  background-position: top;
+  background-image: linear-gradient(to right bottom, rgba(17, 168, 202, 0.7) 25%, rgba(0, 153, 231, 0.7));
 }
 page.page-3 {
   background-color: #0594b4;
-  background-image: linear-gradient(to right bottom, rgba(5, 148, 180, 0.7) 25%, rgba(0, 153, 231, 0.7));
+  background-image: linear-gradient(to right bottom, rgba(17, 168, 202, 0.7) 25%, rgba(0, 153, 231, 0.7));
 }
 .header__main {
-  padding-top: 4cm;
-  height: 65%;
+  padding-top: 2cm;
+  height: 67.5%;
   overflow: hidden;
-  background-image: linear-gradient(to right bottom, rgba(26, 45, 52, 0.7), rgba(26, 45, 52, 0.7)), url(./img/handshake.jpg);
-  background-size: cover;
-  background-position: top;
+  background-image: linear-gradient(to right bottom, #1a2d34b3, rgba(26, 45, 52, 0.7)), url(./img/handshakeUS.jpg);
+  background-size: 200%;
+  background-position: 70% 20%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -69,7 +67,7 @@ page.page-3 {
 .header__main .heading__text {
   font-size: 4cm;
   letter-spacing: 10px;
-  line-height: 6cm;
+  line-height: 5cm;
   text-shadow: 0 1cm 1cm #000;
 }
 .header__main .heading__text span {
@@ -80,7 +78,7 @@ page.page-3 {
   filter: drop-shadow(0 1cm 1cm #000);
 }
 .header__main .shape__wrap .shape {
-  margin-top: 2cm;
+  margin-top: 9cm;
   width: 4cm;
   height: 5cm;
   background-color: #0099e7;
@@ -93,7 +91,17 @@ page.page-3 {
   height: 25%;
   gap: 0.6cm;
 }
-.textBox .circular__image {
+.textBox .circular__border-1 {
+  position: absolute;
+  float: left;
+  height: 12cm;
+  width: 12cm;
+  background-color: #0099e7;
+  top: -4.5cm;
+  transform: translate(0.5cm, -2.6cm);
+  border-radius: 50%;
+}
+.textBox .circular__image-1 {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -102,7 +110,51 @@ page.page-3 {
   clip-path: circle(40% at 90% 50%);
   transform: translate(-5.2cm, -4cm);
 }
-.textBox .circular__image img {
+.textBox .circular__image-1 img {
+  height: 100%;
+}
+.textBox .circular__border-2 {
+  position: absolute;
+  float: left;
+  height: 12cm;
+  width: 12cm;
+  background-color: #0099e7;
+  top: -4.5cm;
+  transform: translate(0.7cm, -2.6cm);
+  border-radius: 50%;
+}
+.textBox .circular__image-2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  float: left;
+  top: -4.5cm;
+  clip-path: circle(39% at 75% 50%);
+  transform: translate(-3.5cm, -4cm);
+}
+.textBox .circular__image-2 img {
+  height: 100%;
+}
+.textBox .circular__border-3 {
+  position: absolute;
+  float: left;
+  height: 12cm;
+  width: 12cm;
+  background-color: #0099e7;
+  top: -4.5cm;
+  transform: translate(0.67cm, -2.6cm);
+  border-radius: 50%;
+}
+.textBox .circular__image-3 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  float: left;
+  top: -4.5cm;
+  clip-path: circle(40% at 75% 50%);
+  transform: translate(-3.08cm, -4cm);
+}
+.textBox .circular__image-3 img {
   height: 100%;
 }
 .textBox span {
@@ -116,8 +168,7 @@ page.page-3 {
 }
 .textBox p {
   grid-row: 10/13;
-  justify-content: center;
-  padding: 25px 30px 50px 30px;
+  padding: 25px 5px 0 5px;
   transform: translateY(-2cm);
 }
 .textBox__ {
@@ -126,7 +177,7 @@ page.page-3 {
   grid-template-rows: repeat(12, 7%);
   border-radius: 15px;
   box-shadow: 0 0.5cm 0.5cm black;
-  transform: translateY(-4cm);
+  transform: translateY(-2.5cm);
   font-size: 1.2cm;
   position: relative;
 }
@@ -138,17 +189,15 @@ page.page-3 {
 }
 .textBox__1 {
   grid-column: 1/5;
-  background-color: rgba(0, 153, 231, 0.8);
+  background-color: #0099e7;
 }
 .textBox__2 {
   grid-column: 5/9;
   background-color: #0099e7;
-  background-color: rgba(0, 153, 231, 0.8);
 }
 .textBox__3 {
   grid-column: 9/13;
   background-color: #0099e7;
-  background-color: rgba(0, 153, 231, 0.8);
 }
 
 .explaination {
@@ -156,13 +205,13 @@ page.page-3 {
   text-align: center;
   display: flex;
   align-items: center;
-  padding: 2cm;
+  padding: 1cm;
   font-size: 1.3cm;
   margin: 1cm;
   border-radius: 15px;
   background-color: #33325b9d;
   box-shadow: 0 0.75cm 1.5cm black;
-  transform: translateY(-3cm);
+  transform: translateY(-2.5cm);
   position: absolute;
   z-index: 100;
 }
@@ -171,7 +220,7 @@ page.page-3 {
   height: 100%;
 }
 .stages__topic {
-  height: 5%;
+  height: 7%;
   text-align: center;
   font-size: 1.5cm;
   display: flex;
@@ -179,7 +228,7 @@ page.page-3 {
   align-items: center;
 }
 .stages__content {
-  height: 14%;
+  height: 14.5%;
   padding: 1cm;
   position: relative;
   display: grid;
@@ -188,7 +237,7 @@ page.page-3 {
   align-items: center;
   background-color: #33325b9d;
   border-radius: 20px;
-  margin: 1cm 1cm;
+  margin: 0.5cm 1cm;
 }
 .stages__content h2 {
   margin-bottom: 0.5cm;
@@ -208,7 +257,7 @@ page.page-3 {
   text-align: right;
 }
 .stages__content [class^=circleText] {
-  background-color: #1c92d2;
+  background-color: #0099e7;
   height: 5cm;
   width: 5cm;
   border-radius: 50%;
@@ -218,25 +267,41 @@ page.page-3 {
   text-align: center;
   font-weight: 500;
   font-size: 3cm;
-  color: #f4f1e5;
+  color: white;
   transform: scale(1.2);
 }
 .stages__content .circleText:nth-child(even) {
   grid-column: 11/12;
+  transform: translateX(2cm) scale(1.2);
 }
 .stages__content .circleText:nth-child(odd) {
   grid-column: 2/3;
+  transform: translateX(-2cm) scale(1.2);
 }
 
 .topic {
-  height: 5%;
+  height: 7%;
   text-align: center;
-  background-color: #33325b9d;
   font-size: 0.9cm;
   word-spacing: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+.topic::before {
+  content: "";
+  position: absolute;
+  height: 7cm;
+  width: 7cm;
+  border-radius: 50%;
+  background-image: url(./img/jingkai.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 60% 90%;
+  background-color: blue;
+  top: 0.4cm;
+  left: 1.5cm;
 }
 
 [class^=strategy__] {
@@ -308,7 +373,6 @@ page.page-3 {
 }
 .divTable.blueTable .divTableHeading {
   background: #33325b9d;
-  border-bottom: 0.3cm solid #f0e6d2;
 }
 .divTable.blueTable .divTableHead {
   font-size: 1.5cm;
@@ -369,7 +433,7 @@ page.page-3 {
   top: 0;
   left: 0;
   display: inline-block;
-  background-color: #f0e6d2;
+  background-color: white;
   transform: translate(-4cm);
 }
 
