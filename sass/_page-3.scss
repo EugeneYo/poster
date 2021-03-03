@@ -1,14 +1,16 @@
 .topic {
 	height: 7%;
-	text-align: center;
+	text-align: right;
 	// background-color: $primary-dark;
-	font-size: 0.9cm;
+	font-size: 1.1cm;
 	word-spacing: 5px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+	font-family: "Rye", cursive;
+	margin-right: 3cm;
 
 	&::before {
 		content: "";
